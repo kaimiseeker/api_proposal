@@ -71,7 +71,7 @@
         "balance": 1.5,
         "balanceInUsd": 2400
       },
-      "investmentOptions": [
+      "DepositOptions": [
         {
           "vault": {
             "name": "ETH High Yield Vault",
@@ -145,7 +145,7 @@
         "balance": 1000,
         "balanceInUsd": 1000
       },
-      "investmentOptions": [
+      "DepositOptions": [
         {
           "vault": {
             "name": "USDC Stable Yield Vault",
