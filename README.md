@@ -38,12 +38,10 @@
 # Example Payload
 ```
 {
-  "allowed_assets": ["ETH", "USDC", "DAI"],
+
   "disallowed_assets": ["WBTC", "USDT"],
   "minimum_balance_threshold": 50,
   "allowed_networks": ["mainnet", "polygon"],
-  "disallowed_networks": ["bsc", "arbitrum"],
-  "allowed_protocols": ["Yearn", "Curve", "Aave"],
   "disallowed_protocols": ["Compound", "SushiSwap"]
 }
 ```
