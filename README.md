@@ -20,25 +20,21 @@
 * Type: array[string]
 * Description: List of asset symbols that are not permitted for deposit.
 * Example: ["WBTC", "USDT"], default = None
-5. minimumBalanceThreshold
-* Type: number
-* Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
-* Example: 50
-6. allowedNetworks
+5. allowedNetworks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
 * Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"], default = all
 * If allowed is used, disallowed is ignored. 
-7. disallowedNetworks
+6. disallowedNetworks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
 * Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"], default = None
-8. allowedProtocols
+7. allowedProtocols
 * Type: array[string]
 * Description: List of protocol names that are permitted for deposit options.
 * Example: ["Yearn", "Curve", "Aave"], default = all
 * If allowed is used, disallowed is ignored. 
-9. disallowedProtocols
+8. disallowedProtocols
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
