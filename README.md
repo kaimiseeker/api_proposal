@@ -3,34 +3,42 @@
 /v1/best-deposit-options/{userAddress}
 
 ## Additional Parameters
-1. allowed_assets
+1. minimum_balance_threshold
+* Type: number
+* Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
+* Example: 50
+2. max_vaults_per_asset
+* Type: number
+* Description: Max number of top vaults to be displayed per asset on a network
+* Example: 3, max=5
+3. allowed_assets
 * Type: array[string]
 * Description: List of asset symbols that are permitted for deposit.
 * Example: ["ETH", "USDC", "DAI"], default = all
 * If allowed is used, disallowed is ignored. 
-2. disallowed_assets
+4. disallowed_assets
 * Type: array[string]
 * Description: List of asset symbols that are not permitted for deposit.
 * Example: ["WBTC", "USDT"], default = None
-3. minimum_balance_threshold
+5. minimum_balance_threshold
 * Type: number
 * Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
 * Example: 50
-4. allowed_networks
+6. allowed_networks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
 * Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"], default = all
 * If allowed is used, disallowed is ignored. 
-5. disallowed_networks
+7. disallowed_networks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
 * Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"], default = None
-6. allowed_protocols
+8. allowed_protocols
 * Type: array[string]
 * Description: List of protocol names that are permitted for deposit options.
 * Example: ["Yearn", "Curve", "Aave"], default = all
 * If allowed is used, disallowed is ignored. 
-7. disallowed_protocols
+9. disallowed_protocols
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
@@ -38,11 +46,12 @@
 # Example Payload
 ```
 {
-
-  "disallowed_assets": ["WBTC", "USDT"],
   "minimum_balance_threshold": 50,
+  "max_vaults_per_asset": 3
+  "disallowed_assets": ["WBTC", "USDT"],
   "allowed_networks": ["mainnet", "polygon"],
   "disallowed_protocols": ["Compound", "SushiSwap"]
+
 }
 ```
 # Example response
