@@ -86,7 +86,7 @@
             "network_caip": "eip155:1",
             "tvlInUsd": 50000000,
             "apy": 5.5,
-            "projectedEarnings": 132
+            "projectedAnnualEarnings": 132
           }
         }
       ]
