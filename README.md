@@ -4,33 +4,33 @@
 
 ## Additional Parameters
 1. allowed_assets
-Type: array[string]
-Description: List of asset symbols or identifiers that are permitted for deposit.
-Example: ["ETH", "USDC", "DAI"]
+* Type: array[string]
+* Description: List of asset symbols or identifiers that are permitted for deposit.
+* Example: ["ETH", "USDC", "DAI"]
 2. disallowed_assets
-Type: array[string]
-Description: List of asset symbols or identifiers that are not permitted for deposit.
-Example: ["WBTC", "USDT"]
+* Type: array[string]
+* Description: List of asset symbols or identifiers that are not permitted for deposit.
+* Example: ["WBTC", "USDT"]
 3. minimum_balance_threshold
-Type: number
-Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
-Example: 50
+* Type: number
+* Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
+* Example: 50
 4. allowed_networks
-Type: array[string]
-Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
-Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"]
+* Type: array[string]
+* Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
+* Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"]
 5. disallowed_networks
-Type: array[string]
-Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
-Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"]
+* Type: array[string]
+* Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
+* Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"]
 6. allowed_protocols
-Type: array[string]
-Description: List of protocol names that are permitted for deposit options.
-Example: ["Yearn", "Curve", "Aave"]
+* Type: array[string]
+* Description: List of protocol names that are permitted for deposit options.
+* Example: ["Yearn", "Curve", "Aave"]
 7. disallowed_protocols
-Type: array[string]
-Description: List of protocol names that are not permitted for deposit options.
-Example: ["Compound", "SushiSwap"]
+* Type: array[string]
+* Description: List of protocol names that are not permitted for deposit options.
+* Example: ["Compound", "SushiSwap"]
 
 
 # Example Payload
