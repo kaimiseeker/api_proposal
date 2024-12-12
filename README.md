@@ -5,12 +5,12 @@
 ## Additional Parameters
 1. allowed_assets
 * Type: array[string]
-* Description: List of asset symbols or identifiers that are permitted for deposit.
-* Example: ["ETH", "USDC", "DAI"]
+* Description: List of asset symbols that are permitted for deposit.
+* Example: ["ETH", "USDC", "DAI"], default = all
 2. disallowed_assets
 * Type: array[string]
-* Description: List of asset symbols or identifiers that are not permitted for deposit.
-* Example: ["WBTC", "USDT"]
+* Description: List of asset symbols that are not permitted for deposit.
+* Example: ["WBTC", "USDT"], default = None
 3. minimum_balance_threshold
 * Type: number
 * Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
@@ -18,20 +18,27 @@
 4. allowed_networks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
-* Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"]
+* Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"], default = all
 5. disallowed_networks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
-* Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"]
+* Example: ["bsc", "arbitrum"] or ["eip155:56", "eip155:42161"], default = None
 6. allowed_protocols
 * Type: array[string]
 * Description: List of protocol names that are permitted for deposit options.
-* Example: ["Yearn", "Curve", "Aave"]
+* Example: ["Yearn", "Curve", "Aave"], default = all
 7. disallowed_protocols
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
-* Example: ["Compound", "SushiSwap"]
-
+* Example: ["Compound", "SushiSwap"], default = None
+8. allowed_target_underlying_assets
+* Type: array[string]
+* Description: List of target underlying assets that are permitted for deposit.
+* Example: ["ETH", "USDC", "DAI"], default = all
+9. disallowed_target_underlying_assets
+* Type: array[string]
+* Description: List of target underlying assets that are not permitted for deposit.
+* Example: ["WBTC", "USDT"], default = None
 
 # Example Payload
 ```
