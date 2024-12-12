@@ -7,6 +7,7 @@
 * Type: array[string]
 * Description: List of asset symbols that are permitted for deposit.
 * Example: ["ETH", "USDC", "DAI"], default = all
+* If allowed is used, disallowed is ignored. 
 2. disallowed_assets
 * Type: array[string]
 * Description: List of asset symbols that are not permitted for deposit.
@@ -19,6 +20,7 @@
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
 * Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"], default = all
+* If allowed is used, disallowed is ignored. 
 5. disallowed_networks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
@@ -27,6 +29,7 @@
 * Type: array[string]
 * Description: List of protocol names that are permitted for deposit options.
 * Example: ["Yearn", "Curve", "Aave"], default = all
+* If allowed is used, disallowed is ignored. 
 7. disallowed_protocols
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
