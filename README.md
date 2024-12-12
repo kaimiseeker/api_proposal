@@ -31,14 +31,6 @@
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
-8. allowed_target_underlying_assets
-* Type: array[string]
-* Description: List of target underlying assets that are permitted for deposit.
-* Example: ["ETH", "USDC", "DAI"], default = all
-9. disallowed_target_underlying_assets
-* Type: array[string]
-* Description: List of target underlying assets that are not permitted for deposit.
-* Example: ["WBTC", "USDT"], default = None
 
 # Example Payload
 ```
