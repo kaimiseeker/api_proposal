@@ -78,7 +78,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 50000000,
-            "apy": 5.5,
+            "apy": 0.055,
             "projectedAnnualEarnings": 132
           }
         },
@@ -98,7 +98,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 25000000,
-            "apy": 3.2,
+            "apy": 0.032,
             "projectedAnnualEarnings": 76.8
           }
         },
@@ -118,7 +118,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 100000000,
-            "apy": 4.8,
+            "apy": 0.048,
             "projectedAnnualEarnings": 115.2
           }
         }
@@ -152,7 +152,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 80000000,
-            "apy": 3.5,
+            "apy": 0.035,
             "projectedAnnualEarnings": 35
           }
         },
@@ -172,7 +172,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 150000000,
-            "apy": 2.8,
+            "apy": 0.028,
             "projectedAnnualEarnings": 28
           }
         },
@@ -192,7 +192,7 @@
             "networkName": "mainnet",
             "network_caip": "eip155:1",
             "tvlInUsd": 120000000,
-            "apy": 2.5,
+            "apy": 0.025,
             "projectedAnnualEarnings": 25
           }
         }
