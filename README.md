@@ -38,6 +38,10 @@
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
+9. allowedTargetUnderlyingTokenForAsset
+* Description: List of protocol names that are not permitted for deposit options.
+* Example: { "ETH" : ("stETH", "cbETH")}, { "USDC" : ("USDT", "USDE")}, default - TBD
+
 
 # Example Payload
 ```
@@ -47,6 +51,7 @@
   "disallowedAssets": ["WBTC", "USDT"],
   "allowedNetworks": ["mainnet", "polygon"],
   "disallowedProtocols": ["Compound", "SushiSwap"]
+  "allowedTargetUnderlyingTokenForAsset": { "eth" : ("stETH", "cbETH")} 
 }
 ```
 
