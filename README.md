@@ -43,9 +43,9 @@
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
 9. minimumVaultTvl
-Type: number
-Description: minimum vault size 
-default = $100k
+* Type: number
+* Description: minimum vault size 
+* default = $100k
 10. allowedTargetUnderlyingTokenForAsset
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: { "ETH" : ("stETH", "cbETH")}, { "USDC" : ("USDT", "USDE")}, default - TBD
