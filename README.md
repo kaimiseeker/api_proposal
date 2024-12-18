@@ -7,6 +7,7 @@
 * Type: number
 * Description: Minimum balance (in USD) that an asset must meet or exceed to be considered for deposit options.
 * Example: 50
+* Default: $1
 2. maxVaultsPerAsset
 * Type: number
 * Description: Max number of top vaults to be displayed per asset on a network
@@ -15,7 +16,8 @@
 * Type: array[string]
 * Description: List of asset symbols that are permitted for deposit.
 * Example: ["ETH", "USDC", "DAI"], default = all
-* If allowed is used, disallowed is ignored. 
+* If allowed is used, disallowed is ignored.
+* default: all assets on Vaults.fyi
 4. disallowedAssets
 * Type: array[string]
 * Description: List of asset symbols that are not permitted for deposit.
@@ -25,6 +27,7 @@
 * Description: List of network names or CAIP-2 identifiers that are permitted for deposit options.
 * Example: ["mainnet", "polygon"] or ["eip155:1", "eip155:137"], default = all
 * If allowed is used, disallowed is ignored. 
+* default: ["Mainnet", "Arbitrum", "Base", "Optimism", "Polygon"]
 6. disallowedNetworks
 * Type: array[string]
 * Description: List of network names or CAIP-2 identifiers that are not permitted for deposit options.
@@ -34,14 +37,19 @@
 * Description: List of protocol names that are permitted for deposit options.
 * Example: ["Yearn", "Curve", "Aave"], default = all
 * If allowed is used, disallowed is ignored. 
+* default: all on vaults.fyi
 8. disallowedProtocols
 * Type: array[string]
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: ["Compound", "SushiSwap"], default = None
-9. allowedTargetUnderlyingTokenForAsset
+9. minimumVaultTvl
+Type: number
+Description: minimum vault size 
+default = $100k
+10. allowedTargetUnderlyingTokenForAsset
 * Description: List of protocol names that are not permitted for deposit options.
 * Example: { "ETH" : ("stETH", "cbETH")}, { "USDC" : ("USDT", "USDE")}, default - TBD
-
+* default: { "ETH" : ("stETH", "cbETH", "wETH"),}
 
 # Example Payload
 ```
